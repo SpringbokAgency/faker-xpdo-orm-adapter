@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="faker-xpdo-orm-adapter" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" version="1.1">
+    <object class="SimpleFakerObject" table="simple_faker_objects" extends="xPDOSimpleObject">
+        <field key="title" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+    </object>
+
+    <object class="ParentChildrenFakerObject" table="parent_children_faker_objects" extends="SimpleFakerObject">
+        <field key="parent" dbtype="int" precision="11" phptype="integer"/>
+
+        <composite alias="Children" class="ParentChildrenFakerObject" local="id" foreign="parent" cardinality="many"
+                   owner="local"/>
+        <aggregate alias="Parent" class="ParentChildrenFakerObject" local="parent" foreign="id" cardinality="one"
+                   owner="foreign"/>
+    </object>
+
+    <object class="ColumnTypeGuesserFakerObject" extends="xPDOSimpleObject">
+        <field key="timestamp" dbtype="timestamp" phptype="timestamp" null="true"/>
+        <field key="datetime" dbtype="datetime" phptype="datetime" null="true"/>
+        <field key="date" dbtype="date" phptype="date" null="true"/>
+
+        <field key="boolean" dbtype="tinyint" precision="1" phptype="boolean" null="true"/>
+        <field key="integer" dbtype="int" precision="11" phptype="boolean" null="true"/>
+
+        <field key="array" dbtype="text" phptype="array" null="true"/>
+        <field key="string" dbtype="varchar" precision="255" phptype="string" null="true"/>
+
+        <field key="object" dbtype="text" phptype="object" null="false" default="not_sure"/>
+    </object>
+</model>
