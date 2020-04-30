@@ -1,7 +1,12 @@
 {
   "name": "springbokagency/faker-xpdo-orm-adapter",
   "type": "library",
-  "description": "xPDO ORM adapter for faker",
+  "description": "A Faker ORM adapter to populate xPDO objects with fake data",
+  "keywords": [
+    "xpdo",
+    "modx",
+    "faker"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -43,5 +48,9 @@
       "vendor/modxcms/xpdo2/xpdo/",
       "tests/test_package/core/components/faker-xpdo-orm-adapter/model/faker-xpdo-orm-adapter/"
     ]
+  },
+  "support": {
+    "issues": "https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/issues",
+    "source": "https://github.com/SpringbokAgency/faker-xpdo-orm-adapter"
   }
 }
