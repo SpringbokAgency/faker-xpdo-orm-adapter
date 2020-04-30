@@ -10,10 +10,10 @@
 namespace SpringbokAgency\Tests\Faker\ORM\xPDO;
 
 use Faker\Factory;
-use ParentChildrenFakerObject;
-use SimpleFakerObject;
 use SpringbokAgency\Faker\ORM\xPDO\Populator;
 use SpringbokAgency\Tests\PHPUnit\Framework\DatabaseTestCase;
+use SpringbokAgency\Tests\TestPackage\Faker\Model\ParentChildrenFakerObject;
+use SpringbokAgency\Tests\TestPackage\Faker\Model\SimpleFakerObject;
 
 class PopulatorTest extends DatabaseTestCase
 {

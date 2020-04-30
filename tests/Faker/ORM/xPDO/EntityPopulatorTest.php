@@ -12,11 +12,11 @@ namespace SpringbokAgency\Tests\Faker\ORM\xPDO;
 use Closure;
 use Faker\Factory;
 use Faker\Generator;
-use ParentChildrenFakerObject;
 use RuntimeException;
-use SimpleFakerObject;
 use SpringbokAgency\Faker\ORM\xPDO\EntityPopulator;
 use SpringbokAgency\Tests\PHPUnit\Framework\DatabaseTestCase;
+use SpringbokAgency\Tests\TestPackage\Faker\Model\ParentChildrenFakerObject;
+use SpringbokAgency\Tests\TestPackage\Faker\Model\SimpleFakerObject;
 
 class EntityPopulatorTest extends DatabaseTestCase
 {

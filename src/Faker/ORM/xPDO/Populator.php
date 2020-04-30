@@ -12,7 +12,7 @@ namespace SpringbokAgency\Faker\ORM\xPDO;
 
 use Faker\Generator;
 use InvalidArgumentException;
-use xPDO;
+use xPDO\xPDO;
 
 class Populator
 {
