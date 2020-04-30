@@ -17,7 +17,7 @@ Steps to reproduce the behavior, including custom code if needed.
 A clear and concise description of what you expected to happen.
 
 **Environment (please complete the following information):**
- - OS: [e.g. macOS]
+ - PHP Version: [e.g. PHP 7.2.30]
  - Database: [e.g. mysql, mariadb]
  - xPDO and/or MODX Version: [e.g. xPDO 2.7.0-pl, MODX 2.7.2]
 
