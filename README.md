@@ -1,6 +1,6 @@
 # Faker xPDO ORM Adapter
 
-A [Faker](https://github.com/fzaninotto/Faker) ORM adapter to populate [xPDO](http://xpdo.org) objects with fake data.
+A [Faker](https://github.com/FakerPHP/Faker) ORM adapter to populate [xPDO](http://xpdo.org) objects with fake data.
 
 # Table of contents
 
@@ -29,4 +29,4 @@ $populator->addEntity(\modResource::class, 10);
 $insertedPKs = $populator->execute();
 ```
 
-For more info read [the Faker documentation](https://github.com/fzaninotto/Faker#populating-entities-using-an-orm-or-an-odm).
+For more info read [the Faker documentation](https://github.com/FakerPHP/Faker#populating-entities-using-an-orm-or-an-odm).
