@@ -19,7 +19,7 @@
       "type": "package",
       "package": {
         "name": "modxcms/xpdo2",
-        "version": "v2.8.0-pl",
+        "version": "v2.8.3-pl",
         "source": {
           "url": "git@github.com:modxcms/xpdo.git",
           "type": "git",
@@ -29,10 +29,10 @@
     }
   ],
   "require": {
-    "fakerphp/faker": "^1.10"
+    "fakerphp/faker": "^1.16"
   },
   "require-dev": {
-    "modxcms/xpdo2": "^2.8",
+    "modxcms/xpdo2": "^2.8.3",
     "phpunit/phpunit": "~6.5"
   },
   "autoload": {
