@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated dependency fakerphp/faker to 1.19.0
 - Updated development dependency phpunit/phpunit to 7.5.20
+- Updated development dependency modxcms/xpdo2 to 2.8.4
 
 ## [1.3.0] - 2021-11-12
 
