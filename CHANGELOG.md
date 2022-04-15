@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - T.B.A.
+## [1.4.0] - 2022-04-15
 
 ### Changed
 - Updated dependency fakerphp/faker to 1.19.0
@@ -45,7 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Classes to populate xPDO objects with relevant fake data.
 - Test Suite (example package and Unit Tests).
 
-[Unreleased]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/compare/v1.0.0...v1.1.0
