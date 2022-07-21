@@ -13,8 +13,8 @@ namespace SpringbokAgency\Faker\ORM\xPDO;
 use Faker\Generator;
 use Faker\Guesser\Name;
 use RuntimeException;
-use xPDO;
-use xPDOObject;
+use xPDO\Om\xPDOObject;
+use xPDO\xPDO;
 
 class EntityPopulator
 {

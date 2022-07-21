@@ -18,7 +18,7 @@ require_once dirname((dirname(dirname(__DIR__)))) . '/vendor/autoload.php';
 
 $driver = $properties['xpdo_driver'];
 
-$xpdo = new xPDO(
+$xpdo = new xPDO\xPDO(
     $properties[$driver . '_string_dsn_test'],
     $properties[$driver . '_string_username'],
     $properties[$driver . '_string_password']
@@ -27,11 +27,16 @@ $xpdo = new xPDO(
 $packageBasePath = dirname(__DIR__) . '/core/components/faker-xpdo-orm-adapter/';
 $xpdo->setPackage('faker-xpdo-orm-adapter', $packageBasePath);
 $xpdo->setLogTarget('ECHO');
-$xpdo->setLogLevel(xPDO::LOG_LEVEL_INFO);
+$xpdo->setLogLevel(xPDO\xPDO::LOG_LEVEL_INFO);
 
 $xpdo->getManager()->getGenerator()->parseSchema(
     $packageBasePath . 'model/schema/faker-xpdo-orm-adapter.' . $driver . '.schema.xml',
-    $packageBasePath . 'model/'
+    $packageBasePath . 'src/',
+    [
+        'namespacePrefix' => 'SpringbokAgency\\Tests\\TestPackage\\Faker\\',
+        'update' => 1,
+        'regenerate' => 1,
+    ]
 );
 
 $mtime = microtime();

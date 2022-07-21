@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model package="faker-xpdo-orm-adapter" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" version="1.1">
-    <object class="SimpleFakerObject" table="simple_faker_objects" extends="xPDOSimpleObject">
+<model package="SpringbokAgency\Tests\TestPackage\Faker\Model" baseClass="xPDO\Om\xPDOObject" platform="mysql" defaultEngine="InnoDB" version="3.0">
+    <object class="SimpleFakerObject" table="simple_faker_objects" extends="xPDO\Om\xPDOSimpleObject">
         <field key="title" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
     </object>
 
-    <object class="ParentChildrenFakerObject" table="parent_children_faker_objects" extends="SimpleFakerObject">
+    <object class="ParentChildrenFakerObject" table="parent_children_faker_objects" extends="SpringbokAgency\Tests\TestPackage\Faker\Model\SimpleFakerObject">
         <field key="parent" dbtype="int" precision="11" phptype="integer"/>
 
         <composite alias="Children" class="ParentChildrenFakerObject" local="id" foreign="parent" cardinality="many"
@@ -13,7 +13,7 @@
                    owner="foreign"/>
     </object>
 
-    <object class="ColumnTypeGuesserFakerObject" extends="xPDOSimpleObject">
+    <object class="ColumnTypeGuesserFakerObject" extends="xPDO\Om\xPDOSimpleObject">
         <field key="timestamp" dbtype="timestamp" phptype="timestamp" null="true"/>
         <field key="datetime" dbtype="datetime" phptype="datetime" null="true"/>
         <field key="date" dbtype="date" phptype="date" null="true"/>
@@ -27,7 +27,7 @@
         <field key="object" dbtype="text" phptype="object" null="false" default="not_sure"/>
     </object>
 
-    <object class="CustomColumnFormatterFakerObject" table="custom_column_formatter_faker_objects" extends="xPDOSimpleObject">
+    <object class="CustomColumnFormatterFakerObject" table="custom_column_formatter_faker_objects" extends="xPDO\Om\xPDOSimpleObject">
         <field key="class_key" dbtype="varchar" precision="255" phptype="string" null="true"/>
         <field key="do_not_populate" dbtype="text" phptype="string" null="false" default="not populated with fake data"/>
     </object>

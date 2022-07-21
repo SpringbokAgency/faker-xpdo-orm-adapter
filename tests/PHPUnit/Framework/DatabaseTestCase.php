@@ -11,7 +11,7 @@ namespace SpringbokAgency\Tests\PHPUnit\Framework;
 
 
 use PHPUnit\Framework\TestCase;
-use xPDO;
+use xPDO\xPDO;
 
 abstract class DatabaseTestCase extends TestCase
 {
@@ -38,8 +38,10 @@ abstract class DatabaseTestCase extends TestCase
 
         $xpdo->getManager()->createSourceContainer();
         $xpdo->setPackage(
-            'faker-xpdo-orm-adapter',
-            dirname(dirname(__DIR__)) . '/test_package/core/components/faker-xpdo-orm-adapter/model/'
+            'SpringbokAgency\Tests\TestPackage\Faker\Model',
+            dirname(dirname(__DIR__)) . '/test_package/core/components/faker-xpdo-orm-adapter/src/',
+            null,
+            'SpringbokAgency\\Tests\\TestPackage\\Faker\\'
         );
 
         self::$xpdo = $xpdo;

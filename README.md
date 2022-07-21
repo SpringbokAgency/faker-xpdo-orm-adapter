@@ -24,8 +24,8 @@ Here is an example showing how to populate 5 `modUser` and 10 `modResource` obje
 <?php
 $generator = \Faker\Factory::create();
 $populator = new \SpringbokAgency\Faker\ORM\xPDO\Populator($generator, $xpdo);
-$populator->addEntity(\modUser::class, 5);
-$populator->addEntity(\modResource::class, 10);
+$populator->addEntity(\MODX\Revolution\modUser::class, 5);
+$populator->addEntity(\MODX\Revolution\modResource::class, 10);
 $insertedPKs = $populator->execute();
 ```
 

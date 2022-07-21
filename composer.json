@@ -14,25 +14,11 @@
       "email": "joshua.luckers@springbokagency.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "modxcms/xpdo2",
-        "version": "v2.8.4-pl",
-        "source": {
-          "url": "git@github.com:modxcms/xpdo.git",
-          "type": "git",
-          "reference": "origin/2.x"
-        }
-      }
-    }
-  ],
   "require": {
     "fakerphp/faker": "^1.20"
   },
   "require-dev": {
-    "modxcms/xpdo2": "^2.8.4",
+    "xpdo/xpdo": "^3.1",
     "phpunit/phpunit": "^7"
   },
   "autoload": {
@@ -43,11 +29,7 @@
   "autoload-dev": {
     "psr-4": {
       "SpringbokAgency\\Tests\\": "tests/"
-    },
-    "classmap": [
-      "vendor/modxcms/xpdo2/xpdo/",
-      "tests/test_package/core/components/faker-xpdo-orm-adapter/model/faker-xpdo-orm-adapter/"
-    ]
+    }
   },
   "support": {
     "issues": "https://github.com/SpringbokAgency/faker-xpdo-orm-adapter/issues",
