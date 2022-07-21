@@ -29,7 +29,7 @@
     }
   ],
   "require": {
-    "fakerphp/faker": "^1.16"
+    "fakerphp/faker": "^1.20"
   },
   "require-dev": {
     "modxcms/xpdo2": "^2.8.4",
