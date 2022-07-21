@@ -33,7 +33,7 @@
   },
   "require-dev": {
     "modxcms/xpdo2": "^2.8.4",
-    "phpunit/phpunit": "~6.5 || ~7.0"
+    "phpunit/phpunit": "^7"
   },
   "autoload": {
     "psr-4": {
